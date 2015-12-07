@@ -1,0 +1,47 @@
+
+Thu Nov 12 15:59:08 CET 2015
+================================================================================
+Start of user code createMoj
+		try {
+			newResource = new Moj(serviceProviderId, Integer.toString(mojs.size()));
+		} catch (URISyntaxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		mojs.add(newResource);
+		// End of user code
+Start of user code "ServiceProviderInfo[] getServiceProviderInfos(...)"
+		ServiceProviderInfo serviceProviderInfo = new ServiceProviderInfo();
+		serviceProviderInfo.name = "a name";
+		serviceProviderInfo.serviceProviderId = "0";
+		
+		serviceProviderInfos = new ServiceProviderInfo[] {serviceProviderInfo};
+		// End of user code
+Start of user code getETagFromMoj
+		// End of user code
+Start of user code queryMojs
+		resources = new ArrayList<Moj>(mojs);
+		// End of user code
+Start of user code getMoj
+		aResource = mojs.get(Integer.parseInt(mojId));
+		// End of user code
+Start of user code MojSelector
+		resources = new ArrayList<Moj>(mojs);
+		// End of user code
+
+Thu Nov 12 16:11:02 CET 2015
+================================================================================
+Start of user code searchMojs userCode
+		// End of user code
+Start of user code getMoj userCode
+		// End of user code
+Start of user code getServiceProviderInfos userCode
+		// End of user code
+Start of user code getMojs userCode
+		// End of user code
+Start of user code getMojsManagingServiceProvider userCode
+        // End of user code
+Start of user code getETagFromMoj userCode
+		// End of user code
+Start of user code createMoj userCode
+		// End of user code

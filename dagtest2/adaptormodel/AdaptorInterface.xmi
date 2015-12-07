@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ASCII"?>
+<oslc4j_ai:AdaptorInterface
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:oslc4j_ai="http://org.eclipse.lyo/oslc4j/adaptorInterface"
+    xsi:schemaLocation="http://org.eclipse.lyo/oslc4j/adaptorInterface ../../org.eclipse.lyo.oslc4j.adaptormodel/model/adaptorInterface.ecore"
+    name="dagtest"
+    javaClassBaseNamespace="se.rende.lyo.test"
+    javaFilesBasePath="/src/"
+    jspFilesBasePath="/WebContent"
+    javascriptFilesBasePath="/WebContent">
+  <serviceProviderCatalog
+      title="dagtest"
+      description="dags test catalog">
+    <publisher
+        title="dagtestpublisher"
+        label="dagtestpublisher"
+        identifier="dagtestpublisher"/>
+    <serviceProviders
+        title="dagtestprovider"
+        description="dags test provider"
+        instanceID="">
+      <services
+          domainSpecification="//@specification/@domainSpecifications.0">
+        <creationFactories
+            title="mojcreator"
+            label="mojcreator"
+            creationURI="qweqwe"
+            resourceTypes="//@specification/@domainSpecifications.0/@resources.0"/>
+        <queryCapabilities
+            title="MojQuery"
+            label="mojquery"
+            queryBaseURI=""
+            resourceTypes="//@specification/@domainSpecifications.0/@resources.0"/>
+        <selectionDialogs
+            title="mojselectdialog"
+            label="mojselectdialog"
+            dialogURI="selector"
+            resourceTypes="//@specification/@domainSpecifications.0/@resources.0"/>
+        <creationDialogs
+            title="mojcreatedialog"
+            label="mojcreatedialog"
+            dialogURI="creator"
+            resourceTypes="//@specification/@domainSpecifications.0/@resources.0"/>
+        <basicCapabilities
+            instanceID=""
+            resourceTypes="//@specification/@domainSpecifications.0/@resources.0"/>
+      </services>
+    </serviceProviders>
+  </serviceProviderCatalog>
+  <specification>
+    <domainSpecifications
+        name="Grej"
+        namespaceURI="se"
+        namespacePrefix="//@specification/@domainPrefixes.0">
+      <resources
+          name="Moj"
+          resourceProperties="//@specification/@domainSpecifications.0/@resourceProperties.0"/>
+      <resourceProperties
+          title="name"
+          name="name"
+          valueType="String"
+          description=""/>
+    </domainSpecifications>
+    <domainPrefixes
+        name="prefix1"/>
+  </specification>
+</oslc4j_ai:AdaptorInterface>
